@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VanaFoundation</title>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap/css/bootstrap.min.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+
+
+		
+		
+	</head>
+	<body>
+		<!--Header Navigation will vbe filled by JS init 
+		note: any change in ID needs to be updated in script too.-->
+		<header class="container-fluid" id="page-head-nav">
+			
+		</header>
+
+
+		<!--Carousel slider-->
+		<section class="container-fluid  container-bg">
+			<div class="p-0">
+				<h2 class="text-center py-4 mb-0">Library</h2>
+				<div id="lib-featured-player" class="carousel slide" >
+					<div id="featured-player"></div>
+
+					<img id="featured-play-vid" class="img-fluid w-100" src="../assets/img/Main Video Player/1.jpg" />
+
+					<div id="fetaured-play-icon" class="carousel-caption vid-play-icon">
+						
+						<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 1.png" />
+						
+					</div>
+					<!--div id="featured-play-control" class="player-controls">
+						<button class="btn btn-sm">
+							<img class="" src="../assets/icon/6A_LIBRARY/player-play.png" />
+						</button>
+						<button class="btn btn-sm">
+							<img class="" src="../assets/icon/6A_LIBRARY/play-next.png" />
+						</button>
+						<button class="btn btn-sm">
+							<img class="" src="../assets/icon/6A_LIBRARY/player-seek-2.png" />
+						</button>
+						<span class="player-time">
+							14:20 | 60:32
+						</span>
+						<button class="btn btn-sm">
+							<img class="" src="../assets/icon/6A_LIBRARY/player-sound.png" />
+						</button>
+						<button class="btn btn-sm">
+							<img class="" src="../assets/icon/6A_LIBRARY/info-white.png" />
+						</button>
+						<button class="btn btn-sm">
+							<img class="" src="../assets/icon/6A_LIBRARY/expand icon.png" />
+						</button>
+					</div-->
+				  	<!--ol class="carousel-slide carousel-indicators indicators-right">
+				    	<li data-target="#event-row-carousel" data-slide-to="0" class="active"></li>
+				    	<li data-target="#event-row-carousel" data-slide-to="1"></li>
+				    	<li data-target="#event-row-carousel" data-slide-to="2"></li>
+				  	</ol-->
+				  	<!--div class="carousel-inner">
+				    	<div class="carousel-item active">
+				    		
+				      		<img class="carousel-img img-fluid d-block w-100" src="../assets/img/Main Video Player/1.jpg"  alt="...">
+				      		
+				      		<div class="carousel-caption vid-play-icon">
+				      			<a href="https://youtu.be/gZk63k7ralw" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+				      			<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 1.png" />
+				      			</a>
+				      		</div>
+				      		<a href="https://youtu.be/gZk63k7ralw" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+				      		<div class="player-controls">
+				      			<button class="btn btn-sm">
+				      				<img class="" src="../assets/icon/6A_LIBRARY/player-play.png" />
+				      			</button>
+				      			<button class="btn btn-sm">
+				      				<img class="" src="../assets/icon/6A_LIBRARY/play-next.png" />
+				      			</button>
+				      			<button class="btn btn-sm">
+				      				<img class="" src="../assets/icon/6A_LIBRARY/player-seek-2.png" />
+				      			</button>
+				      			<span class="player-time">
+				      				14:20 | 60:32
+				      			</span>
+				      			<button class="btn btn-sm">
+				      				<img class="" src="../assets/icon/6A_LIBRARY/player-sound.png" />
+				      			</button>
+				      			<button class="btn btn-sm">
+				      				<img class="" src="../assets/icon/6A_LIBRARY/info-white.png" />
+				      			</button>
+				      			<button class="btn btn-sm">
+				      				<img class="" src="../assets/icon/6A_LIBRARY/expand icon.png" />
+				      			</button>
+				      		</div>
+				      	</a>
+				    	</div>
+				    	<!--div class="carousel-item">
+				      		<img class="carousel-img img-fluid" src="../assets/img/Rectangle 107.png" class="d-block w-100" alt="...">
+				      		<div class="carousel-caption vid-play-icon">
+				      			<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 1.png" />
+				      		</div>
+				    	</div>
+				    	<div class="carousel-item">
+				      		<img class="carousel-img img-fluid" src="../assets/img/Rectangle 107.png" class="d-block w-100" alt="...">
+				      		<div class="carousel-caption vid-play-icon">
+				      			<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 1.png" />
+				      		</div>
+				    	</div>
+				  	</div-->
+				</div>
+			</div>
+		</section>
+
+		<!--Filter Navigation-->
+	
+
+	<section class="container-fluid filter-bg">
+		<nav class="navbar navbar-expand-lg navbar-light nav ml-auto justify-content-end">
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  			<div class="input-group filter-search-form mx-auto">
+	  			  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-label">
+	  			  <div class="input-group-append">
+	  			    <span class="input-group-text" id="search-label"></span>
+	  			  </div>
+	  			</div>
+			  		
+	    		<ul id="lib-filter-row" class="navbar-nav my-2 my-lg-0">
+	    			
+	    			<li class="js-toggle-sort nav-item d-lg-flex">
+	    				<label class="d-inline-block pl-lg-4 pr-3 mb-0 sort-label">Sort By</label>
+		    			<a class="nav-link" id="filter-group-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    					New to Old
+						</a>
+						<div class="dropdown-menu" aria-labelledby="filter-group-3">
+							<div class="dropdown-divider"></div>
+		        		    <a class="dropdown-item" href="#">Old to New</a>
+		        		     
+		        		    
+		        		</div>
+	    			</li>
+	    		</ul>
+	  		</div>
+		</nav>
+	</section><!--End of navigation-->
+
+
+		<!--All Videos-->
+		<section id="videos"  class="container-fluid container-bg">
+		
+			<h2 class="text-center py-3 mb-0 sub-heading">Videos</h2>
+		
+			 
+		</section>
+
+		<!-- Blockquote row Begin -->
+		<section class="container">
+			<blockquote class="featured-quote mx-auto text-center">
+			  <p class="mb-0 d-inline-flex">“Our vision at Vana Foundation is to revive Indian wisdom. We focus on Indian wisdom, Indian farming and Indian culture through our initiatives and activities.”</p>
+			  <footer><b>His Holiness, The Dalai Lama</b></footer>
+			</blockquote>
+		</section>
+		<!-- Blockquote row End -->
+
+
+		<!-- Recordings row -->
+
+	<section id="recordings" class="container-fluid container-bg">
+		<h2 class="text-center py-4 mb-0 sub-heading">Recordings</h2>
+				<!--Filter Navigation-->
+	
+
+		<section class="container-fluid filter-bg">
+			<nav class="navbar navbar-expand-lg navbar-light nav ml-auto justify-content-end">
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    		<span class="navbar-toggler-icon"></span>
+		  		</button>
+
+		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  			<div class="input-group filter-search-form mx-auto">
+		  			  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-label">
+		  			  <div class="input-group-append">
+		  			    <span class="input-group-text" id="search-label"></span>
+		  			  </div>
+		  			</div>
+				  		
+		    		<ul id="lib-filter-row" class="navbar-nav my-2 my-lg-0">
+		    			
+		    			<li class="js-toggle-sort nav-item d-lg-flex">
+		    				<label class="d-inline-block pl-lg-4 pr-3 mb-0 sort-label">Sort By</label>
+		    				<a class="nav-link" id="filter-group-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    					New to Old
+						</a>
+						<div class="dropdown-menu" aria-labelledby="filter-group-3">
+							<div class="dropdown-divider"></div>
+		        		    <a class="dropdown-item" href="#">Old to New</a>
+		        		     
+		        		    
+		        		</div>
+		    			</li>
+		    		</ul>
+		  		</div>
+			</nav>
+		</section><!--End of navigation-->
+
+
+
+	</section>
+
+		<!-- Blockquote row Begin -->
+		<section class="container">
+			<blockquote class="featured-quote mx-auto text-center">
+			  <p class="mb-0 d-inline-flex">“Our vision at Vana Foundation is to revive Indian wisdom. We focus on Indian wisdom, Indian farming and Indian culture through our initiatives and activities.”</p>
+			  <footer><b>His Holiness, The Dalai Lama</b></footer>
+			</blockquote>
+		</section>
+		<!-- Blockquote row End -->
+
+	<section id="teachings" class="container-fluid container-bg">
+		<h2 class="text-center py-4 mb-0 sub-heading">Teachings</h2>
+
+				<!--Filter Navigation-->
+	
+
+		<section class="container-fluid filter-bg">
+			<nav class="navbar navbar-expand-lg navbar-light nav ml-auto justify-content-end">
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    		<span class="navbar-toggler-icon"></span>
+		  		</button>
+
+		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  			<div class="input-group filter-search-form mx-auto">
+		  			  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-label">
+		  			  <div class="input-group-append">
+		  			    <span class="input-group-text" id="search-label"></span>
+		  			  </div>
+		  			</div>
+				  		
+		    		<ul id="lib-filter-row" class="navbar-nav my-2 my-lg-0">
+		    			
+		    			<li class="js-toggle-sort nav-item d-lg-flex">
+		    				<label class="d-inline-block pl-lg-4 pr-3 mb-0 sort-label">Sort By</label>
+		    				<a class="nav-link" id="filter-group-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    					New to Old
+						</a>
+						<div class="dropdown-menu" aria-labelledby="filter-group-3">
+							<div class="dropdown-divider"></div>
+		        		    <a class="dropdown-item" href="#">Old to New</a>
+		        		     
+		        		    
+		        		</div>
+		    			</li>
+		    		</ul>
+		  		</div>
+			</nav>
+		</section><!--End of navigation-->
+
+		
+
+	</section>
+
+		<!-- Blockquote row Begin -->
+		<section class="container">
+			<blockquote class="featured-quote mx-auto text-center">
+			  <p class="mb-0 d-inline-flex">“Our vision at Vana Foundation is to revive Indian wisdom. We focus on Indian wisdom, Indian farming and Indian culture through our initiatives and activities.”</p>
+			  <footer><b>His Holiness, The Dalai Lama</b></footer>
+			</blockquote>
+		</section>
+		<!-- Blockquote row End -->
+
+    <section id="readings" class="container-fluid container-bg">
+		<h2 class="text-center py-4 mb-0 sub-heading">Recommended Readings</h2>
+
+		<!--Filter Navigation-->
+	
+
+		<section class="container-fluid filter-bg">
+			<nav class="navbar navbar-expand-lg navbar-light nav ml-auto justify-content-end">
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    		<span class="navbar-toggler-icon"></span>
+		  		</button>
+
+		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  			<div class="input-group filter-search-form mx-auto">
+		  			  <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-label">
+		  			  <div class="input-group-append">
+		  			    <span class="input-group-text" id="search-label"></span>
+		  			  </div>
+		  			</div>
+				  		
+		    		<ul id="lib-filter-row" class="navbar-nav my-2 my-lg-0">
+		    			
+		    			<li class="js-toggle-sort nav-item d-lg-flex">
+		    				<label class="d-inline-block pl-lg-4 pr-3 mb-0 sort-label">Sort By</label>
+		    				<a class="nav-link" id="filter-group-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    					New to Old
+						</a>
+						<div class="dropdown-menu" aria-labelledby="filter-group-3">
+							<div class="dropdown-divider"></div>
+		        		    <a class="dropdown-item" href="#">Old to New</a>
+		        		     
+		        		    
+		        		</div>
+		    			</li>
+		    		</ul>
+		  		</div>
+			</nav>
+		</section><!--End of navigation-->
+
+		
+	</section>
+
+
+
+		<!-- Blockquote row Begin -->
+		<section class="container">
+			<blockquote class="featured-quote mx-auto text-center">
+			  <p class="mb-0 d-inline-flex">“Our vision at Vana Foundation is to revive Indian wisdom. We focus on Indian wisdom, Indian farming and Indian culture through our initiatives and activities.”</p>
+			  <footer><b>His Holiness, The Dalai Lama</b></footer>
+			</blockquote>
+		</section>
+		<!-- Blockquote row End -->
+
+	<!--Footer-->
+	<!--Header Navigation will vbe filled by JS init 
+	note: any change in ID needs to be updated in script too.-->
+	<footer class="container-fluid" id="page-foot">
+		
+	</footer>
+
+
+	<!-- templates -->
+	<script type="text/template" id="videos-template">
+		    <div class="card-deck  card-layout">
+		        <div class="card">
+		        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[5].image.path%>" alt="Card image cap">
+
+		        	<a class="video-card-play-btn" href="<%= rows[5].link %>" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+		        	<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 3.png" />
+		        	</a>
+
+		            <div class="card-body bg-collab-earth">
+		            	<div class="card-block">
+		            	    <h3 class="card-title"><%= rows[5].name %></h3>
+		            	    <h4>Video Length - <%= rows[5].subheading %></h4>
+		            	    <p class="">
+						
+		            	    </p>
+		            	</div>
+		            	<div class="pt-3 card-info">
+		                <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">		            
+		            </div>
+		            </div>    	
+		        </div>
+
+		        <div class="card">
+		        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[0].image.path%>" alt="Card image cap">
+
+		        	<a class="video-card-play-btn" href="<%= rows[0].link %>" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+		        	<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 3.png" />
+		        	</a>
+
+		            <div class="card-body bg-twocl-right">
+		            	<div class="card-block">
+		            	    <h3 class="card-title"><%= rows[0].name %></h3>
+		            	    <h4>Video Length - <%= rows[0].subheading %></h4>
+		            	    <p class="">
+		            	    </p>
+		            	</div>
+		            	<div class="pt-3">
+		                <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		            </div>
+		            </div>
+		            
+		        </div>
+
+		        <div class="card">
+		        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[1].image.path%>" alt="Card image cap">
+
+		        	<a class="video-card-play-btn" href="<%= rows[1].link %>" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+		        	<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 3.png" />
+		        	</a>
+
+		            <div class="card-body bg-twocl-left ">
+		            	<div class="card-block">
+		            	    <h3 class="card-title"><%= rows[1].name %> </h3>
+		            	    <h4>Video Length - <%= rows[1].subheading %></h4>
+		            	    <p class="">
+		            	    </p>
+		            	</div>
+		            	<div class="pt-3">
+		                <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		            </div>
+		            </div>
+		            
+		        </div>
+		    </div>
+		    <div class="card-deck pt-3 card-layout">
+		        <div class="card">
+		        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[2].image.path%>" alt="Card image cap">
+
+		        	<a class="video-card-play-btn" href="<%= rows[2].link %>" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+		        	<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 3.png" />
+		        	</a>
+
+		            <div class="card-body bg-collab-sky">
+		            	<div class="card-block">
+		            	    <h3 class="card-title"><%= rows[2].name %> </h3>
+		            	    <h4>Video Length - <%= rows[2].subheading %></h4>
+		            	    <p class="">
+		            	    </p>
+		            	</div>
+		            	<div class="pt-3">
+		            	    <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		            	</div>
+		            </div>
+		            
+		        </div>
+
+		        <div class="card">
+		        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[3].image.path%>" alt="Card image cap">
+
+		        	<a class="video-card-play-btn" href="<%= rows[3].link %>" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+		        	<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 3.png" />
+		        	</a>
+
+		            <div class="card-body bg-collab-grape">
+		            	<div class="card-block">
+		            	    <h3 class="card-title"><%= rows[3].name %></h3>
+		            	    <h4>Video Length - <%= rows[3].subheading %></h4>
+		            	    <p class="">
+		            	    </p>
+		            	</div>
+		            	<div class="pt-3">
+		            	    <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		            	</div>
+		            </div>
+		            
+		        </div>
+
+		        <div class="card">
+		        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[4].image.path%>" alt="Card image cap">
+
+		        	<a class="video-card-play-btn" href="<%= rows[4].link %>" data-toggle="lightbox" data-gallery="lib-player-preview" data-width="1280" data-height="720" >
+		        	<img class="d-block mx-auto" src="../assets/icon/6A_LIBRARY/Subtraction 3.png" />
+		        	</a>
+
+		            <div class="card-body bg-twocl-right">
+		            	<div class="card-block">
+		            	    <h3 class="card-title"><%= rows[4].name %></h3>
+		            	    <h4>Video Length - <%= rows[4].subheading %></h4>
+		            	    <p class="">
+		            	    </p>
+		            	</div>
+		            	<div class="pt-3">
+		                <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		            </div>
+		            </div>
+		            
+		        </div>
+		    </div>
+		<div class="py-4"><!--Add More-->
+			<img class="img-fluid d-block m-auto w-auto" src="../assets/icon/group3180.png">
+		</div>
+	</script>
+	
+	<script type="text/template" id="recordings-template">
+		     <div class="card-deck pt-3 card-layout">
+		        <div class="card">
+		         	<img class="img-fluid card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[2].image.path%>" alt="Card image cap">
+		             <div class="card-body bg-collab-earth">
+
+		             	<div class="audio-player-controls">
+		             		<a href="<%= rows[2].soundcloud %>" class="sc-player btn btn-sm">Track</a>
+		             	
+		             		
+		             	</div>
+		             	<div class="card-block">
+		             	    <h3 class="card-title"><%= rows[2].name %></h3>
+		             	    <h4>Audio Length - <%= rows[2].subheading %></h4>
+		             	   
+		             	</div>
+		             	<div class="pt-3 card-info">
+		                 	<img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		                 	<a href="<%= rows[2].soundcloud %>" target="_blank">
+		                 	<img class="img-fluid w-auto float-right" src="../assets/icon/6A_LIBRARY/noun_podcast_916000.png" alt="Card image cap">
+		                 	</a>            
+		             	</div>
+		        	</div>    	
+		        </div>
+
+		        <div class="card">
+		         	<img class="img-fluid card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[4].image.path%>" alt="Card image cap">
+		             <div class="card-body bg-twocl-right">
+
+		             	<div class="audio-player-controls">
+		             		<a href="<%= rows[4].soundcloud%>" class="sc-player btn btn-sm">Track</a>
+		             	</div>
+
+		             	<div class="card-block">
+		             	    <h3 class="card-title"><%= rows[4].name %></h3>
+		             	    <h4>Audio Length - <%= rows[4].subheading %></h4>
+		             	</div>
+		             	<div class="pt-3">
+		                 	<img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		                 	<a href="<%= rows[4].soundcloud%>" target="_blank">
+		                 	<img class="img-fluid w-auto float-right" src="../assets/icon/6A_LIBRARY/noun_podcast_916000.png" alt="Card image cap">
+		                 </a>
+		             </div>
+		             </div>
+		             
+		        </div>
+
+		        <div class="card">
+		         	<img class="img-fluid card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[3].image.path%>" alt="Card image cap">
+		             <div class="card-body bg-twocl-left ">
+
+		             	<div class="audio-player-controls">
+		             		<a href="
+		             		<%= rows[3].soundcloud%>" class="sc-player btn btn-sm">Track</a>
+		             		
+		             	</div>
+
+		             	<div class="card-block">
+		             	    <h3 class="card-title"><%= rows[3].name%></h3>
+		             	    <h4>Audio Length - <%= rows[3].subheading%></h4>
+		             	   
+		             	</div>
+		             	<div class="pt-3">
+		                 	<img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		                 	<a href="
+		             		<%= rows[3].soundcloud%>" target="_blank">
+		                 	<img class="img-fluid w-auto float-right" src="../assets/icon/6A_LIBRARY/noun_podcast_916000.png" alt="Card image cap">
+		                 </a>
+		             	</div>
+		             </div>
+		         	</div>
+		     	</div>
+		    <div class="card-deck pt-3 card-layout">
+		        <div class="card">
+		          <img class="img-fluid card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[1].image.path%>" alt="Card image cap">
+		             <div class="card-body bg-collab-sky">
+
+		             	<div class="audio-player-controls">
+		             		<a href="<%= rows[1].soundcloud%>" class="sc-player btn btn-sm">Track</a>
+		             		
+		             	</div>
+
+		             	<div class="card-block">
+		             	    <h3 class="card-title"><%= rows[1].name%></h3>
+		             	    <h4>Audio Length - <%= rows[1].subheading%></h4>
+
+		             	</div>
+		             	<div class="pt-3">
+		             	    <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap" />
+		             	    <a href="<%= rows[1].soundcloud%>" target="_blank">
+		             	    <img class="img-fluid w-auto float-right" src="../assets/icon/6A_LIBRARY/noun_podcast_916000.png" alt="Card image cap" />
+		             		</a>
+		             	</div>
+		             </div>
+		             
+		        </div>
+
+		        <div class="card">
+		         	<img class="img-fluid card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[0].image.path%>" alt="Card image cap">
+		             <div class="card-body bg-collab-grape">
+
+		             	<div class="audio-player-controls">
+		             		<a href="<%= rows[0].soundcloud%>" class="sc-player btn btn-sm">Track</a>
+		             		
+		             	</div>
+
+		             	<div class="card-block">
+		             	    <h3 class="card-title"><%= rows[0].name%></h3>
+		             	    <h4>Audio Length - <%= rows[0].subheading%></h4>
+		             	   
+		             	</div>
+		             	<div class="pt-3">
+		             	    <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		             	    <a href="<%= rows[0].soundcloud%>" target="_blank">
+		             	    <img class="img-fluid w-auto float-right" src="../assets/icon/6A_LIBRARY/noun_podcast_916000.png" alt="Card image cap" />
+		             		</a>
+		             	</div>
+		             </div>
+		             
+		        </div>
+
+		        <div class="card">
+		         	<img class="img-fluid card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[5].image.path%>" alt="Card image cap">
+		             <div class="card-body bg-twocl-right">
+
+		             	<div class="audio-player-controls">
+		             		<a href="<%= rows[5].soundcloud%>" class="sc-player btn btn-sm">Track</a>
+		             		
+		             	</div>
+		             	
+		             	<div class="card-block">
+		             	    <h3 class="card-title"><%= rows[5].name%></h3>
+		             	    <h4>Audio Length - <%= rows[5].subheading%></h4>
+		             	</div>
+		             	<div class="pt-3">
+		                 <img class="img-fluid w-auto float-left" src="../assets/icon/collab-share-icon.png" alt="Card image cap">
+		                 <a href="<%= rows[5].soundcloud%>" target="_blank">
+		                 <img class="img-fluid w-auto float-right" src="../assets/icon/6A_LIBRARY/noun_podcast_916000.png" alt="Card image cap" />
+		             	</a>
+		             	</div>
+		             	</div>
+		             
+		         	</div>
+		     	</div>
+				 <div class="py-4"><!--Add More-->
+				 	<img class="img-fluid d-block m-auto w-auto" src="../assets/icon/group3180.png">
+				 </div>
+	</script>
+
+	<script type="text/template" id="teachings-template">
+		<div class="card-deck pt-3 card-layout">
+			<div class="card">
+			    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[0].image.path%>" alt="Card image cap">
+			    <div class="card-body">
+			    	<div class="card-body-details">
+			      <b>Authors: </b><%= rows[0].authors%>
+			      <br />
+			      <b>Year:</b> <%= rows[0].year%>
+			  </div>
+
+			      <div class="pt-3">
+		       	    <button class="btn download-icon">
+		       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+		       	    </button>
+		       	   <button class="btn float-right" data-toggle="collapse" href="#collapse-card-1" role="button" aria-expanded="false" aria-controls="collapse-card-1">
+		       	   	
+		       	   </button>
+		       	   <div class="collapse lib-card-popup" id="collapse-card-1">
+		       	     <div class="content">
+		       	       <h4>Teaching | New Delhi, 2016 | Dzongsar Jamyang Khyentse Rinpoche</h4>
+		       	       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque.
+		       	       </p>
+		       	       <p> 
+		       	       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque. 
+		       	   </p>
+		       	     </div>
+		       	   </div>
+		       	    
+		       	</div>
+			  </div>
+
+			</div>
+			<div class="card">
+			    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[1].image.path%>" alt="Card image cap">
+			    <div class="card-body">
+			    	<div class="card-body-details">
+			      <b>Authors:</b> <%= rows[1].authors%><br />
+			      <b>Year:</b> <%= rows[1].year%>
+			  </div>
+
+			      <div class="pt-3">
+		       	    <button class="btn download-icon">
+		       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+		       	    </button>
+		       	   
+		       	    <button class="btn float-right" data-toggle="collapse" href="#collapse-card-2" role="button" aria-expanded="false" aria-controls="collapse-card-2">
+		       	    	
+		       	    </button>
+		       	    <div class="collapse lib-card-popup" id="collapse-card-2">
+		       	      <div class="content">
+		       	        <h4>Siddhartha Festival 2018 | Teaching by Dzongsar Jamyang Khyentse Rinpoche | 17th November, 2018</h4>
+		       	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque.
+		       	        </p>
+		       	        <p> 
+		       	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque. 
+		       	    </p>
+		       	      </div>
+		       	    </div>
+		       	    
+		       	</div>
+			    </div>
+			</div>
+			<div class="card">
+			    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[2].image.path%>" alt="Card image cap">
+			    <div class="card-body">
+			    	<div class="card-body-details">
+			     <b>Authors: </b><%= rows[2].authors%>
+			 	<br />
+			      <b>Year:</b> <%= rows[2].year%>
+			  </div>
+
+			      <div class="pt-3">
+		       	    <button class="btn download-icon">
+		       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+		       	    </button>
+		       	   
+		       	    <button class="btn float-right" data-toggle="collapse" href="#collapse-card-3" role="button" aria-expanded="false" aria-controls="collapse-card-3">
+		       	    	
+		       	    </button>
+		       	    <div class="collapse lib-card-popup" id="collapse-card-3">
+		       	      <div class="content">
+		       	        <h4>'Why the Prince left the Palace' | Talk by Dzongsar Khyentse Rinpoche | 17th Dec, 2017 | New Delhi</h4>
+		       	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque.
+		       	        </p>
+		       	        <p> 
+		       	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque. 
+		       	    </p>
+		       	      </div>
+		       	    </div>
+		       	    
+		       	</div>
+			    </div>
+			  </div>
+		
+			</div>
+
+		<div class="card-deck pt-3 card-layout">
+			<div class="card">
+			    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[3].image.path%>" alt="Card image cap">
+			    <div class="card-body">
+			    	<div class="card-body-details">
+			      <b>Authors: </b><%= rows[3].authors%>
+			      <br />
+			      <b>Year:</b> <%= rows[3].year%>
+			  </div>
+
+			      <div class="pt-3">
+		       	    <button class="btn download-icon">
+		       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+		       	    </button>
+		       	   
+		       	    <button class="btn float-right" data-toggle="collapse" href="#collapse-card-4" role="button" aria-expanded="false" aria-controls="collapse-card-4">
+		       	    	
+		       	    </button>
+		       	    <div class="collapse lib-card-popup" id="collapse-card-4">
+		       	      <div class="content">
+		       	        <h4>Vidyaloke Talk | Mindrolling Jetsun Khandro Rinpoche | Abiding within the Buddha nature</h4>
+		       	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque.
+		       	        </p>
+		       	        <p> 
+		       	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque. 
+		       	    </p>
+		       	      </div>
+		       	    </div>
+		       	    
+		       	</div>
+			  </div>
+
+			</div>
+			<div class="card">
+			    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[4].image.path%>" alt="Card image cap">
+			    <div class="card-body">
+			      <div class="card-body-details">
+			      <b>Authors: </b><%= rows[4].authors%> <br />
+			      <b>Year:</b> <%= rows[4].year%>
+			  </div>
+
+			      <div class="pt-3">
+		       	    <button class="btn download-icon">
+		       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+		       	    </button>
+		       	   
+		       	    <button class="btn float-right" data-toggle="collapse" href="#collapse-card-5" role="button" aria-expanded="false" aria-controls="collapse-card-5">
+		       	    	
+		       	    </button>
+		       	    <div class="collapse lib-card-popup" id="collapse-card-5">
+		       	      <div class="content">
+		       	        <h4>Vidyaloke Talk | Dharma in everyday life | Jetsunma Tenzin Palmo | 9th January, 2019 | New Delhi</h4>
+		       	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque.
+		       	        </p>
+		       	        <p> 
+		       	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque. 
+		       	    </p>
+		       	      </div>
+		       	    </div>
+		       	    
+		       	</div>
+			    </div>
+			</div>
+			<div class="card">
+			    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[5].image.path%>" alt="Card image cap">
+			    <div class="card-body">
+			    <div class="card-body-details">
+			     <b>Authors: </b><%= rows[5].authors%>
+			 	<br />
+			      <b>Year:</b> <%= rows[5].year%>
+			  </div>
+
+			      <div class="pt-3">
+		       	    <button class="btn download-icon">
+		       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+		       	    </button>
+		       	   
+		       	    <button class="btn float-right" data-toggle="collapse" href="#collapse-card-6" role="button" aria-expanded="false" aria-controls="collapse-card-6">
+		       	    	
+		       	    </button>
+		       	    <div class="collapse lib-card-popup" id="collapse-card-6">
+		       	      <div class="content">
+		       	        <h4>Vimalakīrti Sūtra | Teaching by Dzongsar Khyentse Rinpoche — Part 1 | 16th March, 2018 | New Delhi</h4>
+		       	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque.
+		       	        </p>
+		       	        <p> 
+		       	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam felis, facilisis mattis ipsum at, cursus ultricies massa. Vestibulum venenatis magna eu rhoncus scelerisque. 
+		       	    </p>
+		       	      </div>
+		       	    </div>
+		       	    
+		       	</div>
+			    </div>
+			</div>
+
+		</div>
+			<div class="py-4"><!--Add More-->
+				 <img class="img-fluid d-block m-auto w-auto" src="../assets/icon/group3180.png">
+			</div>
+	</script>
+
+	<script type="text/template" id="readings-template">
+				<div id="lib-readings" class="card-deck pt-3 card-layout">
+					<div class="card">
+					    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[0].image.path%>" alt="Card image cap">
+					    <div class="card-body">
+					      <b>Authors: </b><%= rows[0].authors%>
+					      <br />
+					      
+					      <b>Year:</b> <%= rows[0].year%>
+
+					      <div class="pt-3">
+				       	    <button class="btn download-icon">
+				       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+				       	    </button>
+				       	   
+		   	    			<button class="btn float-right" data-toggle="collapse" href="#rr-collapse-card-1" role="button" aria-expanded="false" aria-controls="rr-collapse-card-1">
+		   	    	       	    
+		   	    	       	 </button>
+		   	    	       	    <div class="collapse lib-card-popup" id="rr-collapse-card-1">
+		   	    	       	      <div class="content">
+		   	    	       	        <h4>Best Foot Forward: What To Do At The Four Main Buddhist Pilgrimage Sites</h4>
+		   	    	       	        <p>
+		   	    	       	        <b>Authors: </b>Dzongzar Jamyang Khyentse Rinpoche
+		   	    	       	        <br />
+		   	    	       	        <b>Publisher: </b> Timeless Books
+		   	    	       	        <br />
+		   	    	       	        <b>Year:</b> 2017 
+		   	    	       	    </p>
+		   	    	       	      </div>
+		   	    	       	    </div>
+				       	</div>
+					  </div>
+
+					</div>
+					<div class="card">
+					    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[1].image.path%>" alt="Card image cap">
+					    <div class="card-body">
+					      <b>Authors:</b> <%= rows[1].authors%>
+					      <br />
+					      
+					      <b>Year:</b> <%= rows[1].year%>
+
+					      <div class="pt-3">
+				       	    <button class="btn download-icon">
+				       	    	<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+				       	    </button>
+				       	   
+				       	    <button class="btn float-right" data-toggle="collapse" href="#rr-collapse-card-2" role="button" aria-expanded="false" aria-controls="rr-collapse-card-2">
+		    	       	    	
+		    	       	    </button>
+		    	       	    <div class="collapse lib-card-popup" id="rr-collapse-card-2">
+		    	       	      <div class="content">
+		    	       	        <h4>What Makes You Not A Buddhist</h4>
+		    	       	        <p>
+		    	       	        	<b>Authors:</b> Dzongzar Jamyang Khyentse Rinpoche
+		    	       	        	<br />
+		    	       	        	<b>Publisher: </b> Timeless Books
+		    	       	        	<br />
+		    	       	        	<b>Year:</b> 2009
+		    	       	    </p>
+		    	       	      </div>
+		    	       	    </div>
+				       	</div>
+					    </div>
+					</div>
+					<div class="card">
+					    <img class="card-img-top" src="//vana-cockpit.test.openrun.net<%= rows[2].image.path%>" alt="Card image cap">
+					    <div class="card-body">
+					     <b>Authors: </b><%= rows[2].authors%>
+					 	<br />
+			
+					      <b>Year:</b> <%= rows[2].year%>
+
+					      <div class="pt-3">
+					      	<button class="btn download-icon">
+					      		<img class="img-fluid w-auto float-left" src="../assets/icon/6A_LIBRARY/download-icon.png" alt="Card image cap">
+					      	</button>
+				       	    
+				       	   
+				       	    <button class="btn float-right" data-toggle="collapse" href="#rr-collapse-card-3" role="button" aria-expanded="false" aria-controls="rr-collapse-card-3">
+		    	       	    	
+		    	       	    </button>
+		    	       	    <div class="collapse lib-card-popup" id="rr-collapse-card-3">
+		    	       	      <div class="content">
+		    	       	        <h4>The Guru Drinks Bourbon</h4>
+		    	       	        <p>
+		    	       	        	<b>Author: </b>Dzongzar Jamyang Khyentse Rinpoche
+		    	       	        	<br>
+		    	       	        	<b>Editor: </b>Amira Ben-Yehuda
+		    	       	        	<br>
+		    	       	        	<b>Publisher: </b>Shambhala Publications
+		    	       	        	<br>
+		    	       	        	<b>Year: </b>2016
+		    	       	    </p>
+		    	       	      </div>
+		    	       	    </div>
+				       	</div>
+					    </div>
+					</div>
+				
+				</div>
+
+
+				<div class="py-4"><!--Add More-->
+							 <img class="img-fluid d-block m-auto w-auto" src="../assets/icon/group3180.png">
+				</div>	
+
+	</script>
+
+	<!-- Jquery and Bootstrap js JS-->
+	<script src="../assets/js/lib/jquery-3.3.1.js" defer></script>
+	<script src="../assets/css/lib/bootstrap/js/bootstrap.min.js" defer></script>
+	<script src="../assets/js/lib/ekkoLightBox.js" defer></script>
+	<script type="text/javascript" src="../assets/js/app/lib/underscore-min.js" defer></script>
+	<script type="text/javascript" src="../assets/js/app/lib/backbone-min.js" defer></script>
+
+	<script src="../assets/js/lib/soundcloud.api.js" type="text/javascript" defer></script>
+	<!--script defer type="text/javascript" src="../assets/js/lib/soundcloud-custom-player-master/js/sc-player.js"></script-->
+
+	<!-- Custom JS -->
+	<script src="../assets/js/script.js" defer></script>
+
+	<script type="text/javascript" src="../assets/js/app/models.js" defer></script>
+	<script type="text/javascript" src="../assets/js/app/controller.js" defer></script>
+	<!--script type="text/javascript" src="../assets/js/app/views.js" defer></script-->
+	<script type="text/javascript" src="../assets/js/app/router.js" defer></script>
+	<script type="text/javascript" src="../assets/js/app/library.js" defer></script>
+
+
+
+	<script>
+	       var tag = document.createElement('script');
+
+	       tag.src = "https://www.youtube.com/iframe_api";
+	       var firstScriptTag = document.getElementsByTagName('script')[0];
+	       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	       var player;
+	       function onYouTubeIframeAPIReady() {
+	           player = new YT.Player('featured-player', {
+	               height: '720',
+	               width: '100%',
+	               videoId: 'gZk63k7ralw',
+	               events: {
+	                   'onReady': onPlayerReady,
+	               },
+
+	           });
+	       }
+
+	       function onPlayerReady(event) {
+	           $('#lib-featured-player').click(function() {
+	               event.target.playVideo();
+	           });
+	       }
+
+	       /*$(document).ready(function() {
+	           $('#player').hide();
+	           $('#play_vid').click(function() {
+	               $('#player').show();
+	               $('#play_vid').hide();
+	           });
+	       });*/
+	   </script>
+
+	   
+
+	
+	</body>
+</html>

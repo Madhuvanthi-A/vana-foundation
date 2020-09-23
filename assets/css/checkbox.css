@@ -1,0 +1,53 @@
+/* Base for label styling */
+.filter-bg [type="checkbox"]:not(:checked),
+.filter-bg [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+.filter-bg [type="checkbox"]:not(:checked) + label,
+.filter-bg [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 16px;
+}
+/* checkbox aspect */
+.filter-bg [type="checkbox"]:not(:checked) + label:before,
+.filter-bg [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0px; top: 2px;
+   width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: solid 1px #554147;
+  background-color: #ffffff;
+  
+}
+/* checked mark aspect */
+.filter-bg [type="checkbox"]:not(:checked) + label:after,
+.filter-bg [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 6px; left: 4px;
+    font-size: 11px;
+    line-height: 8px;
+    color: #154867;
+    transition: all .2s;
+    width: 10px;
+}
+
+.filter-bg [type="checkbox"]:checked + label {
+    color: #154867;
+}
+/* checked mark aspect changes */
+.filter-bg [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.filter-bg [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}

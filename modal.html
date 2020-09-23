@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Vana Foundation</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="assets/css/home.css">
+  <script type="text/javascript">
+  	function changeVideo(vId){
+  	  var iframe=document.getElementById("iframeYoutube");
+  	  iframe.src="https://www.youtube.com/embed/"+vId;
+
+  	  $("#myModal").modal("show");
+  	}
+  </script>
+  <style type="text/css">
+  	.modal-content {
+  		background: transparent;
+  		border: none;
+  	}
+  	.modal-backdrop {
+  		background: rgba(0,0,0, 0.55);
+  	}
+  	.modal-footer {
+  		border-top:none;
+  	}
+  </style>
+
+</head>
+
+<body>
+
+
+
+	<!-- Header nav Begin -->
+	<header class="container-fluid" id="page-head-nav">
+	</header>
+	<!-- Header nav End -->
+
+
+	<section class="demo" >
+		
+		<a onclick="M.changeVideo('e80BbX05D7Y')">video-1</a>
+		<a onclick="M.changeVideo('ReRcHdeUG9Y')">video-2</a>
+
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-footer">
+		    	  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		    	</div>
+		    	
+		      <div class="modal-body" >
+		      	<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+		      		<iframe id="iframeYoutube" class="embed-responsive-item"  src="https://www.youtube.com/embed/e80BbX05D7Y" frameborder="0" allowfullscreen></iframe> 
+		      	</div>
+		       
+		        
+		      </div>
+		     
+		    </div>
+		  </div>
+		</div>
+
+
+		  
+		  
+	</section>
+
+
+
+	<!--Footer-->
+	<footer class="container-fluid container-bg" id="page-foot">
+	 	
+	</footer>
+	<!--Footer-->
+
+
+
+	<!-- Jquery and Bootstrap js JS-->
+	<script src="assets/js/lib/jquery-3.3.1.js" defer></script>
+	<script src="assets/css/lib/bootstrap/js/bootstrap.min.js" defer></script>
+	
+	<!--script src="assets/js/lib/lg-custom-button.js" defer></script-->
+	<!-- Custom JS -->
+	<!--script src="assets/js/ui-ux.js" defer></script-->
+	<script src="assets/js/script.js" defer></script>
+
+	
+
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VanaFoundation</title>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap/css/bootstrap.min.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/checkbox.css">
+		<link rel="stylesheet" type="text/css" href="../assets/js/lib/ekkoLightBox.css">
+
+		<link rel="stylesheet" type="text/css" href="../assets/js/lib/fancybox-master/dist/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/lib/visual-archive-lightbox.css">
+	</head>
+	<body>
+		<!--Header Navigation will vbe filled by JS init 
+		note: any change in ID needs to be updated in script too.-->
+		<header class="container-fluid" id="page-head-nav">
+			
+		</header>
+
+
+		<!--Carousel slider-->
+		<section id="va-row-carousel" class="container-fluid  container-bg">
+			<div class="p-0">
+				<h2 class="text-center py-4 mb-0">Visual Archive</h2>
+				<div id="event-row-carousel" class="carousel slide" >
+				  	<ol class="carousel-slide carousel-indicators indicators-right">
+				    	<li data-target="#event-row-carousel" data-slide-to="0" class="active"></li>
+				    	<li data-target="#event-row-carousel" data-slide-to="1"></li>
+				    	<li data-target="#event-row-carousel" data-slide-to="2"></li>
+				  	</ol>
+				  	<div class="carousel-inner">
+				    	<div class="carousel-item active">
+				      		<img class="carousel-img img-fluid d-block w-100" src="../assets/img/Gallery- Visual Archive/Slider/Landing Slider/A7305269.jpg"  alt="...">
+				      		<div class="carousel-caption d-none d-md-block caption-left">
+				      			<h3>Siddhartha Festival</h3>
+				      		
+				      			<p>16th - 18th November, 2018<br>
+				      			The Mahabodhi Temple, Bodh Gaya</p>
+				      			
+				      			<div class="view-more">
+				      				<button class="btn btn-lg" data-toggle="modal" data-target=".events-popup-modal" data-src="../assets/img/popup-img.png">FIND OUT MORE</button>
+
+				      				
+				      			</div> 	 
+				      		</div>
+				    	</div>
+				    	<div class="carousel-item">
+				      		<img class="carousel-img img-fluid" src="../assets/img/Gallery- Visual Archive/Slider/Landing Slider/A7305520.jpg" class="d-block w-100" alt="...">
+				    	</div>
+				    	<div class="carousel-item">
+				      		<img class="carousel-img img-fluid" src="../assets/img/Gallery- Visual Archive/Slider/Landing Slider/DSC00626.jpg" class="d-block w-100" alt="...">
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Filter Navigation-->
+	
+
+	<!--Event Navigation-->
+	<section class="container-fluid filter-bg">
+		<nav class="nav navbar navbar-expand-lg navbar-light ml-auto justify-content-end">
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="navbar-nav mr-auto">
+	      			<li class="nav-item dropdown">
+
+	        			<a class="nav-link" id="filter-group-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="../assets/icon/down-arrow.png">
+	        			Initiatives/Collaborations
+	        		</a>
+	        		<div class="dropdown-menu" aria-labelledby="filter-group-1">
+	        		    <a class="dropdown-item" href="javascript:void(0)">Initiatives</a>
+	        		    <form action="#">
+	        		    <div class="dropdown-divider"></div>
+	        		    <div class="form-check">
+	        		    	<input type="checkbox" aria-label="Initiatives Vidyaloke" data-initiatives="va" data-filter="va" id="va-filter-input">
+	        		    	<label for="va-filter-input">Vidyaloke (VA) </label>
+	        		    </div>
+	        		    <div class="form-check">
+	        		    	<input type="checkbox" aria-label="Initiatives Vana Krishi" data-initiatives="vk" data-filter="vk" id="vk-filter-input">
+	        		    	<label for="vk-filter-input">Vana Krishi (VK) </label>
+	        		    </div>
+	        		</form>
+	        		    <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="javascript:void(0)">Collaborations</a>
+	        		   <form action="#">
+	        		    <div class="dropdown-divider"></div>
+	        		    <div class="form-check">
+	        		    	<input type="checkbox" aria-label="Collaborations Siddhartha festival" id="sk-filter-input" data-collab="sf" data-filter="sf">
+	        		    	<label for="sk-filter-input">Siddhartha festival (SF) </label>
+	        		    </div>
+	        		    <div class="form-check">
+	        		    	<input type="checkbox" aria-label="Collaborations Lighting the Mahabodhi" id="lm-filter-input" data-collab="lm" data-filter="lm">
+	        		    	<label for="lm-filter-input">Lighting the Mahabodhi (LM) </label>
+	        		    </div>
+	        		    <div class="form-check">
+	        		    	<input type="checkbox" aria-label="Collaborations Social Emotional Ethical Learning" id="see-filter-input" data-collab="see" data-filter="see">
+	        		    	<label for="see-filter-input" style="vertical-align: middle;">Social Emotional Ethical <br /> Learning (SEE) </label>
+	        		    </div>
+	        		</form>
+	        		    <div class="dropdown-divider"></div>
+	        		    <div class="dropdown-item pl-0" href="#">
+	        		    	<form action="#">
+		        		    	<div class="form-check">
+			        		    	<input type="checkbox" aria-label="All" id="all-filer-input" data-all="all" data-filter="all">
+			        		    	<label for="all-filer-input" style="vertical-align: middle;">All</label>
+		        		    	</div>
+	        		    	</form>
+	        		    	
+	        		</div>
+	        	</div>
+
+	      			</li>
+	      			<li id="js-date-filter" class="nav-item dropdown">
+	        			<a class="nav-link" id="filter-group-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><img class="img-fluid" src="../assets/icon/down-arrow.png">
+						Year <span class="year-holder"></span>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="filter-group-2">
+	        		    <a class="dropdown-item" href="#">All</a>
+	        		     <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="#">2012</a>
+	        		     <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="#">2013</a>
+	        		     <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="#">2014</a>
+	        		     <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="#">2015</a>
+	        		     <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="#">2016</a>
+	        		     <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="#">2017</a>
+	        		     <div class="dropdown-divider"></div>
+	        		    <a class="dropdown-item" href="#">2018</a>
+	        		  </div>
+	      			</li>
+	    		</ul>
+	    		<ul class="navbar-nav my-2 my-lg-0">
+	    			<li id="filter-view-toggle" class="nav-item">
+	    				<a href="#" data-view="grid" class="grid-divider-left pl-4 pr-2">
+	    				    <img class="img-fluid" src="../assets/icon/grid.png">
+	    				</a>
+	    				<a href="#" data-view="list" class="grid-divider-right pr-4 pl-2">
+	    				    <img class="img-fluid" src="../assets/icon/list.png">
+	    				</a>
+	    			</li>
+	    			<li id="js-toggle-selected" class="nav-item d-lg-flex">
+	    				<label class="d-inline-block pl-lg-4 pr-3 mb-lg-0 mt-4 mt-sm-3 mt-lg-0 sort-label">Sort By</label>
+		    			<a class="nav-link" id="filter-group-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    					New to Old
+						</a>
+						<div class="dropdown-menu" aria-labelledby="filter-group-3">
+							<div class="dropdown-divider"></div>
+		        		    <a class="dropdown-item" href="#">Old to New</a>
+		        		     
+		        		    
+		        		</div>
+	    			</li>
+	    		</ul>
+	  		</div>
+		</nav>
+	</section><!--End of navigation--><!--End of navigation-->
+
+
+		<!--All Albums-->
+		<section class="container-fluid container-bg">
+			<h2 class="text-center py-3 mb-0 sub-heading">All Albums</h2>
+			<div id="albums-view" >
+			</div>
+			<div class="p-3"><!--Add More-->
+				<img class="img-fluid d-block m-auto w-auto" src="../assets/icon/group3180.png">
+			</div>
+
+		</section>
+
+
+	<!-- Blockquote row Begin -->
+	<section class="container">
+		<blockquote class="featured-quote mx-auto text-center">
+		  <p class="mb-0 d-inline-flex">“Our vision at Vana Foundation is to revive Indian wisdom. We focus on Indian wisdom, Indian farming and Indian culture through our initiatives and activities.”</p>
+		  <footer><b>His Holiness, The Dalai Lama</b></footer>
+		</blockquote>
+	</section>
+	<!-- Blockquote row End -->
+	<!--Footer-->
+	<!--Header Navigation will vbe filled by JS init 
+	note: any change in ID needs to be updated in script too.-->
+	<footer class="container-fluid" id="page-foot">
+		
+	</footer>
+
+
+	<!-- TOp popup modal-->
+	<!-- events popup modal -->
+	<div class="modal fade events-popup-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-xl">
+	    <div class="modal-content">
+	 
+		        <button type="button" class="close events-modal-close" data-dismiss="modal" aria-label="Close">
+		        	<img src="../assets/icon/4C_EVENTS Lightbox/4C_EVENTS Lightbox/Close icon_Group 268.png" class="" />
+		          <!--span aria-hidden="true">&times;</span-->
+		        </button>
+	   
+	    	<div class="modal-body">
+	    	  <div class="container-fluid">
+	    	    <div class="row no-gutters">
+	    	      <div class="col-left">
+	    	      	<div class="popup-text-content">
+	    	      		<h4>Siddharth Festival</h4>
+	    	      		<label>
+	    	      			<strong>
+	    	      			16th - 18th  November,<br /> 
+							THE MAHABODHI FESTIVAL,<br />
+							BODH GAYA
+							</strong>
+	    	      		</label>
+	    	      		<p>
+	    	      			Siddhartha was born as an Indian prince, but he wasn’t born enlightened. It's tempting to deify him; to say a God walked amongst us, but that would go against everything he taught us. The moment Prince Siddhartha encountered suffering, he dedicated his life to find a way out of it, for himself and everyone else. He renounced all material belongings, suffered adversity, triumphed over desire and longing to eventually achieve enlightenment. When he became the ‘Buddha', he laid out the path he followed in a way that any and all humans 
+
+	    	      		</p>
+	    	      	  </div>
+	    	      	  <a href="../visual-archive#albums-view" class="events-filter-link">
+	    	      	  <img src="../assets/icon/4C_EVENTS Lightbox/4C_EVENTS Lightbox/Group 6.png" />
+	    	      	</a>
+	    	      	</div>
+	    	   
+	    	      <div class="col ml-auto">
+	    	      	<div class="popup-img-content">
+	    	      	 <img src="../assets/icon/4C_EVENTS Lightbox/4C_EVENTS Lightbox/popup-img.png" class="img-fluid" />
+	    	      	</div>
+	    	      </div>
+	    	    </div>
+	    	</div>
+	    </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Templates -->
+
+	<script type="text/template" id="grid-row">
+		<div class="card-deck pt-4 card-layout">
+		<%= content %>
+		</div>
+	</script>
+	<script type="text/template" id="grid-card-item">
+		<div class="card">
+			<a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= image.path %>">
+				<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net/api/cockpit/image?token=account-163e88dfab80418e03a95edb45609b&src=<%= image.path%>&w=414&h=414&o=1" alt="Card image cap">
+			</a>
+		    <div class="card-body" style="background-color: <%= color %>">
+		    	<a class="va-lb-link" data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= image.path %>">
+		    	<div class="card-block">
+		    	    <h3 class="card-title"><%= name %></h3>
+		    	    <h4><%= subheading %></h4>
+		    	    <p class=""><%= displayInfo %>
+		    	    </p>
+		    	</div>
+		    	</a>
+		    	<div class="p-3 card-info">
+		    	<button class="d-inline btn" data-toggle="collapse" href="#<%= 'collapse' + _id.substr(-5) %>" role="button" aria-expanded="false" aria-controls="<%=  'collapse' + _id.substr(-5)  %>">
+		    			
+		    		</button>
+		    		<div class="collapse va-card-content" id="<%= 'collapse' + _id.substr(-5) %>">
+		    		  <div class="card card-body">
+		    		    <h4>About <%= name%></h4>
+		    		    <p><%= content %></p>  
+		    		  </div>
+		    		</div>
+		        		            
+		    </div>
+		    </div>
+		    
+		   
+			<a href="../assets/img/popup-img.png" data-fancybox="visual-archive-preview">
+			  <img src="../assets/img/popup-img.png" />
+			</a>
+
+			<a href="../assets/img/img6.png" data-fancybox="visual-archive-preview">
+			  <img src="../assets/img/img6.png" />
+			</a>
+
+			
+			
+		</div>
+
+	</script>
+
+	<script type="text/template" id="va-page-template">
+	    <div class="card-deck pt-4 card-layout">
+	    
+	        <div class="card">
+	        	<a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[0].image.path %>">
+	        		<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net/api/cockpit/image?token=account-163e88dfab80418e03a95edb45609b&src=<%= rows[0].image.path%>&w=414&h=414&o=1" alt="Card image cap">
+	        	</a>
+	            <div class="card-body bg-collab-grape">
+	            	<a class="va-lb-link" data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[0].image.path %>">
+	            	<div class="card-block">
+	            	    <h3 class="card-title"><%= rows[0].name %></h3>
+	            	    <h4><%= rows[0].subheading %></h4>
+	            	    <p class=""><%= rows[0].displayInfo %>
+	            	    </p>
+	            	</div>
+	            	</a>
+	            	<div class="p-3 card-info">
+	            	<button class="d-inline btn" data-toggle="collapse" href="#collapse-card-1" role="button" aria-expanded="false" aria-controls="collapse-card-1">
+	            			
+	            		</button>
+	            		<div class="collapse va-card-content" id="collapse-card-1">
+	            		  <div class="card card-body">
+	            		    <h4>About <%=rows[0].name%></h4>
+	            		    <p><%= rows[0].content %></p>  
+	            		  </div>
+	            		</div>
+	                		            
+	            </div>
+	            </div>
+	            
+	           
+	        	<a href="../assets/img/popup-img.png" data-fancybox="visual-archive-preview">
+	        	  <img src="../assets/img/popup-img.png" />
+	        	</a>
+
+	        	<a href="../assets/img/img6.png" data-fancybox="visual-archive-preview">
+	        	  <img src="../assets/img/img6.png" />
+	        	</a>
+
+	        	
+	        	
+	        </div>
+	       
+	        <div class="card">
+	        	<a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[1].image.path %>">
+	        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[1].image.path %>" alt="Card image cap" style="min-height: 414px;">
+	        	</a>
+	            <div class="card-body bg-twocl-right">
+	            <a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[1].image.path %>">
+	            	<div class="card-block">
+	            	    <h3 class="card-title"><%= rows[1].name %></h3>
+	            	    <h4><%= rows[1].subheading %></h4>
+	            	    <p class=""><%= rows[1].displayInfo %>
+	            	    </p>
+	            	</div>
+	            </a>
+	            		<div class="p-3 card-info">
+	            		<button class="d-inline btn" data-toggle="collapse" href="#collapse-card-2" role="button" aria-expanded="false" aria-controls="collapse-card-2">
+	            				
+	            			</button>
+	            			<div class="collapse va-card-content" id="collapse-card-2">
+	            			  <div class="card card-body">
+	            			    <h4>About <%=rows[1].name%></h4>
+	            			    <p><%= rows[1].content %>
+
+	            			    </p> 
+	            			     
+	            			  </div>
+	            			</div>
+	            	    		            
+	            	</div>
+	            </div>
+	            
+	        </div>
+	       
+	        <div class="card">
+	        	<a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[2].image.path %>">
+	        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[2].image.path %>" alt="Card image cap">
+	        	</a>
+	            <div class="card-body bg-twocl-left ">
+	           <a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[2].image.path %>">
+	            	<div class="card-block">
+	            	    <h3 class="card-title"><%= rows[2].name %></h3>
+	            	    <h4><%= rows[2].subheading %></h4>
+	            	    <p class=""><%= rows[2].displayInfo %>
+	            	    </p>
+	            	</div>
+	            </a>
+	            <div class="p-3 card-info">
+	            	<button class="d-inline btn" data-toggle="collapse" href="#collapse-card-3" role="button" aria-expanded="false" aria-controls="collapse-card-3">
+	            			
+	            		</button>
+	            		<div class="collapse va-card-content" id="collapse-card-3">
+	            		  <div class="card card-body">
+	            		    <h4>About <%=rows[2].name%></h4>
+	            		    <p><%= rows[2].content %>
+	            		    </p> 
+	            		     
+	            		  </div>
+	            		</div>
+	                		            
+	            </div>
+	            </div>
+	            
+	        </div>
+	    </div>
+	    <div class="card-deck mt-4 card-layout">
+		    <div class="card">
+		        	<a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[3].image.path  %>">
+		        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[3].image.path %>" alt="Card image cap">
+		        	</a>
+		            <div class="card-body bg-collab-sky">
+		            <a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[3].image.path  %>">
+		            	<div class="card-block">
+		            	    <h3 class="card-title"><%= rows[3].name %></h3>
+		            	    <h4><%= rows[3].subheading %></h4>
+		            	    <p class=""><%= rows[3].displayInfo %>
+		            	    </p>
+		            	</div>
+		            	</a>
+		            		<div class="p-3 card-info">
+		            		<button class="d-inline btn" data-toggle="collapse" href="#collapse-card-4" role="button" aria-expanded="false" aria-controls="collapse-card-4">
+		            				
+		            			</button>
+		            			<div class="collapse va-card-content" id="collapse-card-4">
+		            			  <div class="card card-body">
+		            			    <h4>About <%=rows[3].name%></h4>
+		            			    <p><%= rows[3].content %>
+		            			    </p>  
+		            			  </div>
+		            			</div>
+		            	    		            
+		            	</div>
+		            </div>
+		            
+		        </div>
+
+	        <div class="card">
+	        <a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[4].image.path %>">
+	        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[4].image.path %>" alt="Card image cap">
+	        	</a>
+	            <div class="card-body bg-twocl-right">
+	            <a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[4].image.path %>">
+	            	<div class="card-block">
+	            	    <h3 class="card-title"><%= rows[4].name %></h3>
+	            	    <h4><%= rows[4].subheading %></h4>
+	            	    <p class=""> <%= rows[4].displayInfo %>
+	            	    </p>
+	            	</div>
+	            </a>
+	            		<div class="p-3 card-info">
+	            		<button class="d-inline btn" data-toggle="collapse" href="#collapse-card-5" role="button" aria-expanded="false" aria-controls="collapse-card-5">
+	            				
+	            			</button>
+	            			<div class="collapse va-card-content" id="collapse-card-5">
+	            			  <div class="card card-body">
+	            			    <h4>About <%=rows[4].name%></h4>
+	            			    <p><%= rows[4].content %>
+	            			    </p> 
+	            			     
+	            			  </div>
+	            			</div>
+	            	    		            
+	            	</div>
+	            </div>
+	            
+	        </div>
+
+	        <div class="card">
+	        <a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[5].image.path %>">
+	        	<img class="card-img-top img-fluid" src="//vana-cockpit.test.openrun.net<%= rows[5].image.path %>" alt="Card image cap" >
+	        	</a>
+	            <div class="card-body bg-collab-grape">
+	            <a class="va-lb-link"  data-fancybox="visual-archive-preview"  href="//vana-cockpit.test.openrun.net<%= rows[5].image.path %>">
+	            	<div class="card-block">
+	            	    <h3 class="card-title"><%= rows[5].name %></h3>
+	            	    <h4><%= rows[5].subheading %></h4>
+	            	    <p class=""><%= rows[5].displayInfo %>
+	            	    </p>
+	            	</div>
+	            	</a>
+	            		<div class="p-3 card-info">
+	            		<button class="d-inline btn" data-toggle="collapse" href="#collapse-card-6" role="button" aria-expanded="false" aria-controls="collapse-card-6">
+	            				
+	            			</button>
+	            			<div class="collapse va-card-content" id="collapse-card-6">
+	            			  <div class="card card-body">
+	            			    <h4>About <%=rows[5].name%></h4>
+	            			    <p><%= rows[5].content %>
+	            			    </p> 
+	            			     
+	            			  </div>
+	            			</div>
+	            	    		            
+	            	</div>
+	            </div>
+	            </div>
+	            
+	        </div>
+	    </div>
+	
+	</script>
+
+
+
+
+	<!-- Lightbox trigger reference 
+	<button class="btn btn-more d-block"  data-fancybox="visual-archive-preview"  href="../assets/img/img13.png">FIND OUT MORE
+		 
+	</button-->
+	<!-- Jquery and Bootstrap js JS-->
+	<script src="../assets/js/lib/jquery-3.3.1.js" defer></script>
+	<script src="../assets/css/lib/bootstrap/js/bootstrap.min.js" defer></script>
+  	<!--script src="../assets/js/lib/ekkoLightBox.js" defer></script-->
+  	<script type="text/javascript" src="../assets/js/app/lib/underscore-min.js" defer></script>
+  	<script type="text/javascript" src="../assets/js/app/lib/backbone-min.js" defer></script>
+  	<script src="../assets/js/lib/fancybox-master/dist/jquery.fancybox.js" defer></script>
+
+	<!-- Custom JS -->
+	<script src="../assets/js/script.js" defer></script>
+
+	<script type="text/javascript" src="../assets/js/app/models.js" defer></script>
+	<script type="text/javascript" src="../assets/js/app/controller.js" defer></script>
+	<!--script type="text/javascript" src="../assets/js/app/views.js" defer></script-->
+	<script type="text/javascript" src="../assets/js/app/router.js" defer></script>
+	<script type="text/javascript" src="../assets/js/app/visual-archive.js" defer></script>
+
+	
+	</body>
+</html>

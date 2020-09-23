@@ -1,0 +1,183 @@
+.fancybox-slide--image {
+	padding: 0 0 !important;
+}
+
+.fancybox-slide--image .fancybox-content {
+	
+	-webkit-transition: opacity 0.5s ease-out;
+	 -moz-transition: opacity 0.5s ease-out;
+	 -o-transition: opacity 0.5s ease-out;
+	 transition: opacity 0.5s ease-out;
+	 -webkit-transition: transform 0.2s ease-out;
+	  -moz-transition: transform 0.2s ease-out;
+	  -o-transition: transform 0.2s ease-out;
+	  transition: transform 0.2s ease-out;
+}
+.fancybox-can-zoomIn .fancybox-content {
+	cursor: auto;
+}
+
+.fancybox-thumbs__list a::before {
+	border: none;
+}
+
+.fancybox-navigation .fancybox-button {
+	top: 257px;
+}
+
+	@media all and (min-width: 360px) {
+		.fancybox-thumbs {
+			display:none !important;
+		}
+	}
+
+	@media all and (min-height: 769px) {
+		.fancybox-thumbs {
+			margin-top: calc(100vh / 10);
+		}
+		.fancybox-inner {
+			margin-top: calc(100vh / 10);
+		}
+	}
+	@media all and (min-width: 768px) {
+	  .fancybox-thumbs {
+	    top: 534px;
+	    width: auto;
+	    /*bottom: 0px;*/
+	    left: 130px;
+	    right : 0;
+	    height: 95px;
+	    padding: 10px 10px 5px 10px;
+	    box-sizing: border-box;
+	    background: #4a4a4a;
+	    overflow: hidden;
+	    border: 1px solid #faf0d7;
+	    width: 1076px;
+	  }
+	  
+	  .fancybox-show-thumbs .fancybox-inner {
+	  	
+	    right: 0;
+	    bottom: 95px;
+	  }
+	}
+
+	.fancybox-caption__body {
+		max-height: 100%;
+	}
+	.fancybox-caption__body p {
+		width: 203.6px;
+		  height: 258.1px;
+		  font-family: 'Source Sans Pro';
+		  font-size: 18px;
+		  font-weight: normal;
+		  font-style: normal;
+		  font-stretch: normal;
+		  line-height: 26px;
+		  letter-spacing: 0.18px;
+		  text-align: left;
+		  color: #896e03;
+		  margin-top: 108px;
+	}
+
+	@media all and (min-width: 768px) {
+	    /* Change color for backdrop */
+	    .fancybox-custom-layout .fancybox-bg {
+	        background: #4a4a4a;
+	    }
+
+	    .fancybox-custom-layout.fancybox-is-open .fancybox-bg {
+	        opacity: 0.9;
+	    }
+
+	    /* Move caption area to the right side */
+	    .fancybox-custom-layout .fancybox-caption {
+	        background: #faf0d7;
+	        bottom: 0;
+	        color: #6c6f73;
+	        right: auto;
+	        padding: 30px 20px;
+	        left: 130px;
+	        top: 0;
+	        width: 256px;
+	        opacity: 0;
+	        -webkit-transition: opacity 0.5s ease-out;
+	         -moz-transition: opacity 0.5s ease-out;
+	         -o-transition: opacity 0.5s ease-out;
+	         transition: opacity 0.5s ease-out;
+	    }
+
+	    .fancybox-custom-layout .fancybox-caption h3 {
+	        color: #444;
+	        font-size: 21px;
+	        line-height: 1.3;
+	        margin-bottom: 24px;
+	    }
+
+	    .fancybox-custom-layout .fancybox-caption a {
+	        color: #444;
+	    }
+
+	    /* Remove gradient from caption*/
+	    .fancybox-custom-layout .fancybox-caption::before {
+	        display: none;
+	    }
+
+	    /* Adjust content area position */
+	    .fancybox-custom-layout .fancybox-stage {
+	        left: 406px;
+	        background:#faf0d7;
+	        height: 514px;
+	        width: 800px;
+	      	-webkit-transition: background-color 0.5s ease-out;
+	      	 -moz-transition: background-color 0.5s ease-out;
+	      	 -o-transition: background-color 0.5s ease-out;
+	      	 transition: background-color 0.5s ease-out;
+	    }
+
+	    /* Align buttons at the right side  */
+	    .fancybox-custom-layout .fancybox-toolbar {
+	        background: #3b3b45;
+	        bottom: 0;
+	        left: auto;
+	        right: 0;
+	        top: 0;
+	        width: 44px;
+	    }
+
+	    /* Remove background from all buttons */
+	    .fancybox-custom-layout .fancybox-button {
+	        background: transparent;
+	    }
+
+	    /* Navigation arrows */
+	    .fancybox-custom-layout .fancybox-navigation .fancybox-button div {
+	        padding: 2px;
+	    }
+
+	    .fancybox-custom-layout .fancybox-navigation .fancybox-button[disabled] {
+	        color: #ddd;
+	    }
+
+	    .fancybox-custom-layout .fancybox-navigation .fancybox-button:not([disabled]) {
+	        color: #333;
+	    }
+
+	    /* Reposition right arrow */
+	    .fancybox-custom-layout .fancybox-button--arrow_left {
+	        left: 80px;
+	    }
+	    .fancybox-custom-layout .fancybox-button--arrow_right {
+	        right:  calc(100vw - 1259px);
+	    }
+	}
+	.fancybox-close-small {
+		top: 5px;
+		right: 36px;
+	}
+	/*[data-fancybox="visual-archive-preview"] {
+		display: none;
+	}
+	[data-fancybox="visual-archive-preview"]:first-child {
+		display: inherit;
+	}*/
